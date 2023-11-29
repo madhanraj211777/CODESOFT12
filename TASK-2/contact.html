@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MADHANRAJ G - Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #3498db;
+            animation: backgroundTransition 10s infinite alternate;
+            overflow-y: scroll;
+        }
+
+        @keyframes backgroundTransition {
+            from {
+                background-color: #3498db;
+            }
+            to {
+                background-color: #e74c3c;
+            }
+        }
+
+        .mode-switch {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        header {
+            text-align: center;
+            margin-top: 80px;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            animation: fadeInUp 1s ease-out;
+            color:wheat;
+        }
+
+        header p {
+            font-size: 1.2em;
+            animation: fadeInUp 1s 0.5s ease-out;
+            color: #ecf0f1;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #e74c3c;
+        }
+
+        main {
+            padding: 20px;
+            min-height: calc(100vh - 100px); 
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        #contact {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #ecf0f1; 
+            border-radius: 10px; 
+        }
+
+        .contact-link {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #fff;
+            text-decoration: none;
+            background-color: #e74c3c;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-link:hover {
+            background-color: #c0392b;
+        }
+
+        f
+        main {
+            min-height: calc(100vh - 200px); 
+        }
+        
+        footer {
+            text-align: center;
+            color: #ecf0f1;
+            background-color: #2c3e50;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            z-index: 1000; 
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="mode-switch">
+        <label class="switch">
+            <input type="checkbox" id="modeSwitch">
+            <span class="slider round"></span>
+        </label>
+    </div>
+
+    <header>
+        <h1>MADHANRAJ G</h1>
+        <p>Web Developer</p>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <main>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="gmadhanraj111@gmail.com">gmadhanraj111@gmail.com</a></p>
+            <p>Phone: <a href="tel:+919344697525">9344697525</a></p>
+            <p>Connect with me on:</p>
+            <a class="contact-link" href="https://www.linkedin.com/in/madhanraj2004/" target="_blank">LinkedIn</a>
+            <a class="contact-link" href="https://github.com/madhanraj211777/CODESOFT" target="_blank">GitHub</a>
+            <a class="contact-link" href="https://instagram.com/madhan_raj11?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">Instagram</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 MADHANRAJ G. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

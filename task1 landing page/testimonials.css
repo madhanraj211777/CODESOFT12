@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f8f8; 
+    color: #333;
+}
+
+
+header {
+    background-color: #4caf50; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+nav {
+    background-color: #66bb6a; 
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4caf50; 
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.section-title {
+    color: #4caf50; 
+}
+
+
+.testimonial {
+    display: flex;
+    margin-top: 20px;
+}
+
+.testimonial-content {
+    flex: 1;
+}
+
+.testimonial-content p {
+    font-style: italic;
+    color: #666;
+}
+
+.testimonial-content cite {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+footer {
+    background-color: #4caf50; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

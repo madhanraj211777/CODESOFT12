@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(to right, #1a1a1a, #262626);
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+#calculator-container {
+  text-align: center;
+}
+.calculator-title {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #3498db; 
+}
+#calculator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: background 0.5s ease-in-out;
+}
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background: linear-gradient(to right, #00b894, #00cec9);
+  color: #ffffff;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  animation: blink 1s infinite alternate;
+}
+button:active {
+  transform: scale(0.95);
+}
+button.on {
+  background: linear-gradient(to right, #ff7675, #d63031);
+  animation: none;
+}
+input {
+  grid-column: span 4;
+  padding: 20px;
+  font-size: 24px;
+  text-align: right;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff; /* Change this line to set the text color to white */
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.2);
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.operator {
+  background: linear-gradient(to right, #6c5ce7, #4a69bd);
+}
+.equals {
+  background: linear-gradient(to right, #e84393, #fd79a8);
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
